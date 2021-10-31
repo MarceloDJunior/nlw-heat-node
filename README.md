@@ -1,53 +1,38 @@
-# nlw-node-heat
-Node application created during the RocketSeat NLW Heat
+<h1 align="center">NLW Heat - Node.js</h1>
 
----
-## Requirements
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+  <img src="https://img.shields.io/static/v1?label=NLW&message=Heat&color=8257E5&labelColor=000000" alt="NLW Heat" />
+</p>
 
-### Node
-- #### Node installation on Windows
+## ✨ Tecnologias
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- #### Node installation on Ubuntu
+- [TypeScript](https://www.typescriptlang.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [Prisma](https://www.prisma.io/)
+- [JSON Web Token](https://jwt.io/)
+- [Socket.IO](https://socket.io/)
 
-  You can install nodejs and npm easily with apt install, just run the following commands.
+## 🚀 Como executar
 
-      $ sudo apt install nodejs
-      $ sudo apt install npm
+> Obs.: Nesse projeto temos autenticação via OAuth com o GitHub
 
-- #### Other Operating Systems
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+- Clone o repositório e acesse a pasta;
+- Faça uma copia do arquivo `.env.example` para `.env` e preencha com as suas credenciais do GitHub;
+- Instale as dependências com `yarn`;
+- Executa as migrations com `yarn prisma migrate dev`;
+- Inicie o servidor com `yarn dev`;
 
-If the installation was successful, you should be able to run the following command.
+A aplicação pode ser acessada em [`localhost:4000`](http://localhost:4000).
 
-    $ node --version
-    v8.11.3
+## 📄 Licença
 
-    $ npm --version
-    6.1.0
-
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
-
-    $ npm install npm -g
-
-###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
----
-
-## Install
-
-    $ git clone https://github.com/MarceloDJunior/nlw-node-heat
-    $ cd nlw-node-heat
-    $ yarn install
-
-## Running the project
-
-    $ yarn dev
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
